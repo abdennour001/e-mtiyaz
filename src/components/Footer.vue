@@ -1,5 +1,5 @@
 <template>
-    <footer class="mt-4">
+    <footer>
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-md-12">

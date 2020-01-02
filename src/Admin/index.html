@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://pagination.js.org/dist/2.1.5/pagination.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Admin e-mtiyaz</title>
+</head>
+<body>
+<div class="container-fluid" style="padding: 5rem">
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <h1>Interface Administrateur pour contrôler les articles de l'actualité</h1>
+            <p>&reg; www.e-mtiyaz.com | Tous droits réservés</p>
+        </div>
+        <div class="col-lg-12 text-center" style="padding: 5rem">
+            <p class="lead">
+                Bienvenue dans l'interface administrateur où nous pouvons gérer les articles de l'actualité dans le site web www.e-mtiyaz.com
+            </p>
+        </div>
+        <div class="col-lg-12">
+            <form action="#" class="text-left">
+                <div class="d-flex flex-column">
+                    <h3 style="color: dodgerblue">List des articles</h3>
+                    <hr class="mb-5" style="width: 100%; border: 1px solid dodgerblue">
+                    <div id="demo">
+                        <ul class="row data-container card-deck article-container">
+                            <li class="col-lg-4 col-md-4 col-sm-12 mb-5">
+                                <div class="card" data-toggle="modal" data-target=".bd-example-modal-xl">
+                                    <img src="https://stumpblog.com/wp-content/uploads/2018/09/student-education.jpg" alt="Image cap" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">21-12-2019</h6>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-xl">Lire la suite</a>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="#" class="btn btn-primary mr-2">Modifier</a>
+                                        <a href="#" class="btn btn-danger">Supprimer</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-4 col-sm-12 mb-5">
+                                <div class="card" data-toggle="modal" data-target=".bd-example-modal-xl">
+                                    <img src="https://stumpblog.com/wp-content/uploads/2018/09/student-education.jpg" alt="Image cap" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">21-12-2019</h6>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-secondary">Lire la suite</a>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="#" class="btn btn-primary mr-2">Modifier</a>
+                                        <a href="#" class="btn btn-danger">Supprimer</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-4 col-sm-12 mb-5">
+                                <div class="card" data-toggle="modal" data-target=".bd-example-modal-xl">
+                                    <img src="https://stumpblog.com/wp-content/uploads/2018/09/student-education.jpg" alt="Image cap" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">21-12-2019</h6>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-secondary">Lire la suite</a>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="#" class="btn btn-primary mr-2">Modifier</a>
+                                        <a href="#" class="btn btn-danger">Supprimer</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column" style="margin-top: 3rem; color: dodgerblue">
+                    <h3>Ajouter un article:</h3>
+                    <hr class="mb-5" style="width: 100%; border: 1px solid dodgerblue">
+                    <div class="card-deck">
+                        <div class="card add-card col-3">
+                            <div class="card-body text-center align-items-center">
+                                <p class="m-0 pb-3" style="color: gray; font-size: 6rem">
+                                    +
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl  mw-100" style="width: 60%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-5 text-center mt-3">Article Title</h1>
+
+                        <div class="article-img">
+                            <img class="m-5 w-50" src="https://stumpblog.com/wp-content/uploads/2018/09/student-education.jpg" alt="Image cap" style="box-shadow: 0 0 7px rgba(0, 0, 0 ,0.5)"/>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <p class="lead article-body p-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At augue eget arcu dictum varius duis at. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Tellus cras adipiscing enim eu. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Sed viverra ipsum nunc aliquet bibendum enim. Auctor eu augue ut lectus arcu. Aliquet eget sit amet tellus cras adipiscing enim eu. Suscipit adipiscing bibendum est ultricies integer quis auctor. Mi sit amet mauris commodo quis imperdiet massa. Nibh sed pulvinar proin gravida hendrerit. Scelerisque purus semper eget duis at tellus at. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Cursus sit amet dictum sit. Integer enim neque volutpat ac tincidunt vitae semper quis. Vehicula ipsum a arcu cursus vitae congue. Enim facilisis gravida neque convallis a. Nunc scelerisque viverra mauris in aliquam sem fringilla. Diam ut venenatis tellus in metus vulputate eu scelerisque. Venenatis a condimentum vitae sapien pellentesque.
+                        </p>
+                    </div>
+                    <div class="col-12 text-left">
+                        <p class="pl-5 lead" style="opacity: 0.5;">Dernière modification : 21-12-2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Modifier</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Supprimer</button>
+                </div>
+                <div class="ml-auto p-2">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

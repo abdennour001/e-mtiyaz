@@ -19,10 +19,12 @@
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.4.3",
     "jquery": "^3.4.1",
+    "nanobar": "^0.4.2",
     "popper.js": "^1.16.0",
     "scrollreveal": "^4.0.5",
     "vue": "^2.6.10",
     "vue-axios": "^2.1.5",
+    "vue-loading-overlay": "^3.2.0",
     "vue-lodash": "^2.0.2"
   },
   "devDependencies": {

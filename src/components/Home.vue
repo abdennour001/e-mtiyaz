@@ -26,12 +26,12 @@
                 </h4>
               </div>
             </div>
-            <div class="row text-center justify-content-center mt-4">
-              <div class="col-12">
+            <div class="row text-center justify-content-center mt-4 back-groupe">
+              <div class="col-12 mb-5">
                 <!-- Coaching -->
                 <Coaching/>
               </div>
-              <div class="col-12">
+              <div class="col-12 mb-5">
                 <!-- Foundation -->
                 <Foundation/>
               </div>
@@ -66,8 +66,17 @@
               </div>
             </div>
           </section>
+
+          <!-- Rendez-vous -->
+          <section id="rendez-vous" class="mt-5">
+            <div class="row">
+              <div class="col-12">
+                <RendezVous/>
+              </div>
+            </div>
+          </section>
           <!-- Footer -->
-          <section id="footer" class="mt-5">
+          <section id="footer">
             <div class="row text-center justify-content-center">
               <div class="col-12">
                 <Footer/>
@@ -96,9 +105,10 @@
   import Actualite from './Actualite'
   import Footer from './Footer'
   import Location from './Location'
+  import RendezVous from './RendezVous'
   export default {
     name: 'Home',
-    components: { Location, Footer, Actualite, Title, Navigation, Coaching, Foundation, Sup },
+    components: { RendezVous, Location, Footer, Actualite, Title, Navigation, Coaching, Foundation, Sup },
     mounted () {
 
       $(window).scroll(() => {
@@ -160,5 +170,9 @@
         background: $dark-blue-color;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     }
+
+  .back-groupe {
+  }
+
 
 </style>

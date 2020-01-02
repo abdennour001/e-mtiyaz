@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">Article</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -11,19 +11,19 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-12 text-center">
-              <h1 class="display-5 text-center mt-3">Article Title</h1>
+              <h1 class="display-5 text-center mt-3">{{this.title}}</h1>
 
               <div class="article-img">
-                <img class="m-5 w-50" src="https://stumpblog.com/wp-content/uploads/2018/09/student-education.jpg" alt="Image cap" style="box-shadow: 0 0 7px rgba(0, 0, 0 ,0.5)"/>
+                <img class="m-5 w-50" :src="img_path" alt="Image cap" style="box-shadow: 0 0 7px rgba(0, 0, 0 ,0.5)"/>
               </div>
             </div>
-            <div class="col-12 mt-5">
+            <div class="col-12 mt-5 text-left">
               <p class="lead article-body p-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At augue eget arcu dictum varius duis at. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Tellus cras adipiscing enim eu. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Sed viverra ipsum nunc aliquet bibendum enim. Auctor eu augue ut lectus arcu. Aliquet eget sit amet tellus cras adipiscing enim eu. Suscipit adipiscing bibendum est ultricies integer quis auctor. Mi sit amet mauris commodo quis imperdiet massa. Nibh sed pulvinar proin gravida hendrerit. Scelerisque purus semper eget duis at tellus at. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Cursus sit amet dictum sit. Integer enim neque volutpat ac tincidunt vitae semper quis. Vehicula ipsum a arcu cursus vitae congue. Enim facilisis gravida neque convallis a. Nunc scelerisque viverra mauris in aliquam sem fringilla. Diam ut venenatis tellus in metus vulputate eu scelerisque. Venenatis a condimentum vitae sapien pellentesque.
+                {{this.body}}
               </p>
             </div>
             <div class="col-12 text-left">
-              <p class="pl-5 lead" style="opacity: 0.5;">21-12-2019</p>
+              <p class="pl-5 lead" style="opacity: 0.5;">Dernière modification : {{this.date}}</p>
             </div>
           </div>
         </div>
@@ -37,7 +37,8 @@
 
 <script>
   export default {
-    name: 'PostModal'
+    name: 'PostModal',
+    props: ["title", "date", "body", 'img_path']
   }
 </script>
 

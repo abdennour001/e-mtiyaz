@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid p-0 m-0 jumbotron vertical-align" style="height: 70vh">
+  <div class="container-fluid p-0 m-0 jumbotron vertical-align main-container" style="height: 70vh">
     <div class="row">
       <div class="col-6">
         <div class="row justify-content-center">
@@ -11,18 +11,22 @@
           </div>
           <div class="col-12 mt-2">
             <a class="button"
-               data-toggle="modal" data-target="#exampleModal"
-               href="#">
-              Contactez-nous
+               href="http://foundation.e-mtiyaz.com"
+            target="_blank"
+            data-tool-tip="foundation.e-mtiyaz.com">
+              Visitez-nous
               <i class="fas fa-arrow-alt-circle-right align-middle ml-2" style="font-size: 1.7rem"></i>
             </a>
           </div>
         </div>
       </div>
       <div class="col-6">
-        <a href="#">
-          <img src="../assets/logo/e-mtiyaz-logo-v3-foundation.png" class="i m-3" alt="">
-        </a>
+        <div class="logo">
+          <a     href="http://foundation.e-mtiyaz.com"
+                 target="_blank">
+            <img src="../assets/logo/e-mtiyaz-logo-v3-foundation.png" class="i m-3" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -48,6 +52,31 @@
     transition: 0.5s ease;
   }
 
+
+  .button[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    background: $dark-blue-color;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: absolute;
+    display: block;
+    top: 0%;
+    left: 0;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-size: .9rem;
+    padding: .2rem;
+    transform: scale(0);
+    transition:
+      transform 0.2s,
+      left 0.5s;
+  }
+
+  .button[data-tool-tip]:hover::after {
+    transform: scale(1);
+    left: 65%;
+  }
+
   .fa-arrow-alt-circle-right {
     transition: 0.3s ease-out;
   }
@@ -57,16 +86,62 @@
     }
   }
 
+  .logo {
+    position: relative;
+    z-index: 1;
+    transition: 0.25s ease;
+    cursor: pointer;
+  }
+
+  .logo:after {
+    content: '';
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 1000%;
+    position:absolute;
+    left:20%;
+    top:0%;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    transform: skewX(30deg);
+  }
+
+  .logo:hover {
+    transform: translate(-20px);
+  }
+
   .i {
-    width: 50%;
+    width: 40%;
   }
 
   .jumbotron {
-    background: transparent;
+    background: url("../assets/img/coaching-kraków.jpeg") center no-repeat;
+    background-size: cover;
   }
 
   .display-4 {
     font-size: 2em;
+  }
+
+  .main-container {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .main-container:before {
+    content: ' ';
+    z-index: -1;
+    display: block;
+    height: 101%;
+    width: 100%;
+    position:absolute;
+    left:-55%;
+    top:0%;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
+    transform: skewX(30deg);
   }
 
 </style>

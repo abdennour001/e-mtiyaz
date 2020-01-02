@@ -30,8 +30,6 @@
     color: $font-color-dark;
   }
 
-  /*body, html { overflow-x: hidden; }*/
-
   hr.light {
     background-color: $font-color-light;
     opacity: 0.3;
@@ -69,6 +67,30 @@
   .vertical-align {
     display: flex;
     align-items: center;
+  }
+
+  /*squeeze*/
+  .squeeze-75 {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .squeeze-50 {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .nanobar {
+    width: 100%;
+    height: 4px;
+    z-index: 0;
+    top: 0;
+  }
+  .bar {
+    width: 0;
+    height: 100%;
+    transition: height .3s;
+    background: linear-gradient($dark-blue-color);
   }
 
 

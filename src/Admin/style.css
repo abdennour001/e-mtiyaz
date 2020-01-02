@@ -1,0 +1,61 @@
+/**
+ *
+ * style.css
+ *
+ *
+ *
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: dodgerblue;
+}
+
+.article-container {
+    list-style-type: none;
+}
+
+.card {
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.add-card {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+.article-body {
+    text-indent: 50px;
+}
+
+.article-img {
+    position: relative;
+    z-index: 999;
+}
+
+.article-img::after {
+    content: ' ';
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 50%;
+    position:absolute;
+    left:10%;
+    top:10%;
+    background: rgba(73, 190, 230, 0.3);
+}

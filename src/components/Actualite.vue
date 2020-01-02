@@ -7,10 +7,17 @@
         </h4>
       </div>
 
-      <div class="col-12">
-        <ul id="articles" class="row article-container m-0 p-0">
-          <li v-for="article in myArticles" class="col-lg-4 col-md-4 col-sm-12 mb-5" :key="article.id">
-            <PostCard/>
+      <div class="col-12" ref="container">
+        <ul id="articles" class="row article-container justify-content-center m-0 p-0">
+          <li v-for="article in myArticles" class="col-lg-4 col-md-4 card-deck col-sm-12 mb-5" :key="article.id_article">
+            <PostCard :title="article.title" :date="article.date" :body="article.body" :img_path="article.img_path"
+                      @click.native="sendData(article.id_article, article.title, article.body, article.date, article.img_path)"
+            />
+          </li>
+          <li v-if="articles.length === 0">
+            <p class="lead">
+              Il n'y a aucun article dans l'actualité.
+            </p>
           </li>
         </ul>
       </div>
@@ -21,35 +28,68 @@
           :total-rows="rows"
           :per-page="perPage"
           align="center"
+          size="md"
           pills
         />
       </div>
-
     </div>
+
+    <!--    Post Modal -->
+    <PostModal :title="liveArticle.title" :date="liveArticle.date" :body="liveArticle.body" :img_path="liveArticle.img"/>
   </div>
 </template>
 
 <script>
+
+  import Vue from 'vue';
+  // Import component
+  import Loading from 'vue-loading-overlay';
+  // Import stylesheet
+  import 'vue-loading-overlay/dist/vue-loading.css';
+  // Init plugin
+  Vue.use(Loading);
+
   import PostCard from './PostCard'
+  import PostModal from './PostModal'
 
   export default {
     name: 'Actualite',
-    components: { PostCard },
+    components: { PostModal, PostCard },
     data() {
       return {
-        perPage: 6,
+        perPage: 3,
         currentPage: 1,
-        articles: [
-          {id: 1, title: "", body: "", img: "", date: ""},
-          {id: 2, title: "", body: "", img: "", date: ""},
-          {id: 3, title: "", body: "", img: "", date: ""},
-          {id: 4, title: "", body: "", img: "", date: ""},
-          {id: 5, title: "", body: "", img: "", date: ""},
-          {id: 6, title: "", body: "", img: "", date: ""},
-          {id: 7, title: "", body: "", img: "", date: ""},
-          {id: 8, title: "", body: "", img: "", date: ""}
-        ]
+        articles: [],
+        liveArticle: {},
+        axiosResponse: false,
       }
+    },
+    mounted () {
+
+      // show a spinner while fetching data from the server
+      let loader = this.$loading.show({
+        // Optional parameters
+        container: this.$refs.container,
+        color: 'dodgerblue',
+        zIndex: 999,
+        loader: 'spinner',
+      });
+
+      // make the api call to get all the articles
+      this.axios.get( "http://localhost:8888/API/index.php/articles")
+      .then(response => {
+        this.articles = response.data;
+        this.axiosResponse = true;
+      })
+      .catch(e => {
+        console.error(e);
+      });
+
+      // hide the spinner.
+      setTimeout(() => {
+        loader.hide()
+      },1000);
+
     },
     computed: {
       rows() {
@@ -58,6 +98,23 @@
       myArticles() {
         return this.articles.slice( (this.currentPage - 1) * this.perPage,
           this.currentPage * this.perPage)
+      }
+    },
+    methods: {
+      sendData(id, title, body, date, img) {
+        this.liveArticle = {
+          id: id,
+          title: title,
+          body: body,
+          date: date,
+          img: img,
+        }
+      }
+    },
+    watch: {
+      axiosResponse() {
+        // data is ready to go
+
       }
     }
   }

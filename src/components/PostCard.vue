@@ -1,17 +1,16 @@
 <template>
   <div class="container text-left">
     <div class="card" data-toggle="modal" data-target=".bd-example-modal-xl">
-      <img src="https://stumpblog.com/wp-content/uploads/2018/09/student-education.jpg" alt="Image cap" class="card-img-top">
+      <img :src="img_path" alt="Image cap" class="card-img-top">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">21-12-2019</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link" data-toggle="modal" data-target=".bd-example-modal-xl">Lire la suite</a>
+        <h5 class="card-title">{{this.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{this.date}}</h6>
+        <p class="card-text">
+          {{this.intro}}
+        </p>
+        <a href="#" class="btn btn-secondary card-link" data-toggle="modal" data-target=".bd-example-modal-xl">Lire la suite</a>
       </div>
     </div>
-
-<!--    Post Modal -->
-    <PostModal/>
   </div>
 </template>
 
@@ -19,7 +18,13 @@
   import PostModal from './PostModal'
   export default {
     name: 'PostCard',
-    components: { PostModal }
+    components: { PostModal },
+    props: ["title", "date", "body", 'img_path'],
+    computed: {
+      intro() { // get the first 100 characters of the body
+        return this.body.slice(0, 200);
+      }
+    }
   }
 </script>
 
@@ -30,15 +35,16 @@
   .card {
     cursor: pointer;
     transition: 0.5s ease;
+    height: 100%;
   }
 
   .card:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   }
 
-  a {
-    color: $dark-blue-color;
-    text-decoration: none;
+  .card-text {
+    /*background: -webkit-linear-gradient($font-color-dark 10%, rgba(0, 0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
   }
-
 </style>

@@ -19,9 +19,9 @@
                           Groupe e-mtiyaz <i class="fas fa-angle-down ml-2"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                            <li><a class="dropdown-item scrollTo" href="#" data-scroll="#section_quelque_mot">e-mtiyaz Coaching</a></li>
-                            <li><a class="dropdown-item scrollTo" href="#" data-scroll="#section_vision">e-mtiyaz Foundation</a></li>
-                            <li><a class="dropdown-item scrollTo" href="#" data-scroll="#section_vision">e-mtiyaz Sup</a></li>
+                            <li><a class="dropdown-item scrollTo" href="http://coaching.e-mtiyaz.com" target="_blank">e-mtiyaz Coaching</a></li>
+                            <li><a class="dropdown-item scrollTo" href="http://foundation.e-mtiyaz.com" target="_blank">e-mtiyaz Foundation</a></li>
+                            <li><a class="dropdown-item scrollTo" href="https://www.dirasat-international.com/" target="_blank">e-mtiyaz Sup</a></li>
                         </ul>
                     </li>
                     <li id="li-3" class="nav-item">
