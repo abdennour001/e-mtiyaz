@@ -7,8 +7,8 @@ USE `e_mtiyaz_group`;
 DROP TABLE IF EXISTS `article`;
 CREATE TABLE IF NOT EXISTS `article` (
     `id_article` int(11) NOT NULL AUTO_INCREMENT,
-    `title` varchar(30) COLLATE utf8_bin NOT NULL,
-    `body` text COLLATE utf8_bin NOT NULL,
+    `title` mediumtext COLLATE utf8_bin NOT NULL,
+    `body` longtext COLLATE utf8_bin NOT NULL,
     `img_path` text COLLATE utf8_bin NOT NULL,
     `date` date NOT NULL,
     PRIMARY KEY (`id_article`)

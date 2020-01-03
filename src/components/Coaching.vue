@@ -3,13 +3,13 @@
     <div class="row">
       <div class="col-6">
         <div class="row justify-content-center">
-          <div class="col-12">
+          <div class="col-12 e-mtiyaz-title">
             <h1 class="display-4 text-center">e-mtiyaz Coaching</h1>
             <p class="lead">
               centre éducatif <strong>d'excellence</strong>.
             </p>
           </div>
-          <div class="col-12 mt-2">
+          <div class="col-12 mt-2 visit-button">
             <a class="button"
                href="http://coaching.e-mtiyaz.com"
                target="_blank"
@@ -33,8 +33,13 @@
 </template>
 
 <script>
+
+
   export default {
-    name: 'Coaching'
+    name: 'Coaching',
+    mounted() {
+
+    }
   }
 </script>
 

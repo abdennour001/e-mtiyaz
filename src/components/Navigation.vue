@@ -19,16 +19,16 @@
                           Groupe e-mtiyaz <i class="fas fa-angle-down ml-2"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-                            <li><a class="dropdown-item scrollTo" href="http://coaching.e-mtiyaz.com" target="_blank">e-mtiyaz Coaching</a></li>
-                            <li><a class="dropdown-item scrollTo" href="http://foundation.e-mtiyaz.com" target="_blank">e-mtiyaz Foundation</a></li>
-                            <li><a class="dropdown-item scrollTo" href="https://www.dirasat-international.com/" target="_blank">e-mtiyaz Sup</a></li>
+                            <li><a class="dropdown-item" href="http://coaching.e-mtiyaz.com" target="_blank">e-mtiyaz Coaching</a></li>
+                            <li><a class="dropdown-item" href="http://foundation.e-mtiyaz.com" target="_blank">e-mtiyaz Foundation</a></li>
+                            <li><a class="dropdown-item" href="https://www.dirasat-international.com/" target="_blank">e-mtiyaz Sup</a></li>
                         </ul>
                     </li>
                     <li id="li-3" class="nav-item">
-                        <a class="nav-link scrollTo" href="#" data-scroll="#section_expertise">Actualité</a>
+                        <a class="nav-link scrollTo" href="#" data-scroll="#actualite">Actualité</a>
                     </li>
                     <li id="li-4" class="nav-item">
-                        <a class="nav-link scrollTo" href="#" data-scroll="#section_laureats">Contact</a>
+                        <a class="nav-link scrollTo" href="#" data-scroll="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -78,18 +78,6 @@ export default {
           duration: 1000,
           origin: 'top',
           delay: 400,
-          distance: '50px'
-        })
-        sr.reveal('#li-5', {
-          duration: 1000,
-          origin: 'top',
-          delay: 500,
-          distance: '50px'
-        })
-        sr.reveal('#li-6', {
-          duration: 1000,
-          origin: 'top',
-          delay: 600,
           distance: '50px'
         })
       })
@@ -142,24 +130,6 @@ export default {
             duration: 1000,
             origin: 'top',
             delay: 400,
-            distance: '50px'
-          })
-          sr.reveal('#li-5', {
-            duration: 1000,
-            origin: 'top',
-            delay: 500,
-            distance: '50px'
-          })
-          sr.reveal('#li-6', {
-            duration: 1000,
-            origin: 'top',
-            delay: 600,
-            distance: '50px'
-          })
-          sr.reveal('#li-7', {
-            duration: 1000,
-            origin: 'top',
-            delay: 700,
             distance: '50px'
           })
 

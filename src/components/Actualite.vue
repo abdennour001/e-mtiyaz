@@ -124,11 +124,6 @@
 
   @import '../variables.scss';
 
-  .page-item.active .page-link {
-    background-color: red !important;
-    border-color: red !important;
-  }
-
   .article-container {
     list-style-type: none;
   }

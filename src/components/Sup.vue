@@ -2,14 +2,14 @@
   <div class="container-fluid jumbotron vertical-align main-container" style="height: 70vh">
     <div class="row">
       <div class="col-6">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center e-mtiyaz-title">
           <div class="col-12">
             <h1 class="display-4 text-center">e-mtiyaz Sup (ex-Dirasat International) </h1>
             <p class="lead">
               études à l'<strong>Etranger</strong>.
             </p>
           </div>
-          <div class="col-12 mt-2">
+          <div class="col-12 mt-2 visit-button">
             <a class="button"
                href="https://www.dirasat-international.com/"
                target="_blank"
@@ -143,6 +143,29 @@
     background: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
     transform: skewX(-30deg);
+  }
+
+
+  /** media queries **/
+  @media screen and (max-width: 1478px) and (min-width: 1305px) { /* large screen */
+    .display-4 {
+      font-size: 1.8em;
+    }
+  }
+  @media screen and (max-width: 992px) { /* large screen */
+    .display-4 {
+      font-size: 2em;
+    }
+  }
+  @media screen and (max-width: 768px) { /* medium screen */
+    .display-4 {
+      font-size: 2em;
+    }
+  }
+  @media (max-width: 576px) { /* mobile screen */
+    .display-4 {
+      font-size: 2em;
+    }
   }
 
 </style>

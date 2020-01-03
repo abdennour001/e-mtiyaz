@@ -2,14 +2,14 @@
   <div class="container-fluid p-0 m-0 jumbotron vertical-align main-container" style="height: 70vh">
     <div class="row">
       <div class="col-6">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center e-mtiyaz-title">
           <div class="col-12">
             <h1 class="display-4 text-center">e-mtiyaz Foundation</h1>
             <p class="lead">
               promotion de l'insertion <strong>professionnelle</strong> des étudiants.
             </p>
           </div>
-          <div class="col-12 mt-2">
+          <div class="col-12 mt-2 visit-button">
             <a class="button"
                href="http://foundation.e-mtiyaz.com"
             target="_blank"

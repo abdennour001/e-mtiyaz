@@ -96,6 +96,7 @@
 <script>
 
   import $ from 'jquery';
+  import ScrollReveal from 'scrollreveal';
 
   import Navigation from './Navigation'
   import Title from './Title'
@@ -106,10 +107,46 @@
   import Footer from './Footer'
   import Location from './Location'
   import RendezVous from './RendezVous'
+
   export default {
     name: 'Home',
     components: { RendezVous, Location, Footer, Actualite, Title, Navigation, Coaching, Foundation, Sup },
     mounted () {
+
+      window.srTitle = ScrollReveal({ reset: true });
+      window.sr = ScrollReveal({ reset: false });
+      srTitle.reveal('#title', {
+        duration: 1000,
+        origin: 'top',
+        distance: '50px'
+      })
+      sr.reveal('.display-5', {
+        duration: 1000,
+        origin: 'left',
+        distance: '250px'
+      });
+      sr.reveal('.blue', {
+        duration: 1000,
+        origin: 'right',
+        distance: '250px'
+      });
+      sr.reveal('.logo', {
+        duration: 1100,
+        origin: 'right',
+        distance: '250px'
+      });
+      sr.reveal('.e-mtiyaz-title', {
+        duration: 1000,
+        delay: 300,
+        origin: 'left',
+        distance: '250px'
+      });
+      sr.reveal('.visit-button', {
+        duration: 1000,
+        delay: 600,
+        origin: 'left',
+        distance: '250px'
+      })
 
       $(window).scroll(() => {
         if($(window).scrollTop() > 100) {
@@ -126,11 +163,24 @@
           scrollTop : 0
         }, 800)
       });
+
+      $(".scrollTo").on('click', function(e) {
+        let getElem = $(this).data('scroll');
+        e.preventDefault();
+        if ($(getElem).length) {
+          let getOffset = $(getElem).offset().top;
+          let targetDistance = 70;
+          $('html,body').animate({
+            scrollTop : getOffset - targetDistance
+          }, 500);
+        }
+        return false;
+      });
     }
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
     @import "../variables.scss";
 
@@ -171,8 +221,14 @@
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     }
 
-  .back-groupe {
-  }
+    .page-item.active .page-link {
+      color: #fff !important;
+      background-color: $dark-blue-color !important;
+      border-color: $dark-blue-color !important;
+    }
 
+  .page-link {
+    color: $dark-blue-color !important;
+  }
 
 </style>
