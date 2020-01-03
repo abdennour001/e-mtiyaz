@@ -9,7 +9,7 @@
 
       <div class="col-12" ref="container">
         <ul id="articles" class="row article-container justify-content-center m-0 p-0">
-          <li v-for="article in myArticles" class="col-lg-4 col-md-4 card-deck col-sm-12 mb-5" :key="article.id_article">
+          <li v-for="article in myArticles" class="col-lg-4 col-md-12 card-deck col-sm-12 mb-5" :key="article.id_article">
             <PostCard :title="article.title" :date="article.date" :body="article.body" :img_path="article.img_path"
                       @click.native="sendData(article.id_article, article.title, article.body, article.date, article.img_path)"
             />

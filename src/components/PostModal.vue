@@ -18,12 +18,12 @@
               </div>
             </div>
             <div class="col-12 mt-5 text-left">
-              <p class="lead article-body p-5">
+              <p class="lead article-body p-md-5 p-lg-5">
                 {{this.body}}
               </p>
             </div>
             <div class="col-12 text-left">
-              <p class="pl-5 lead" style="opacity: 0.5;">Dernière modification : {{this.date}}</p>
+              <p class="pl-mf-5 pl-lg-5 lead" style="opacity: 0.5;">Dernière modification : {{this.date}}</p>
             </div>
           </div>
         </div>
@@ -81,15 +81,27 @@
     .display-5-override {
       font-size: 2rem;
     }
+    .lead {
+      font-size: 1.3rem;
+    }
   }
   @media screen and (max-width: 768px) { /* medium screen */
     .display-5-override {
       font-size: 1.8rem;
     }
+    .lead {
+      font-size: 1.2rem;
+    }
   }
   @media (max-width: 576px) { /* mobile screen */
     .display-5-override {
       font-size: 1.5rem;
+    }
+    .article-body {
+      text-indent: 20px;
+    }
+    .lead {
+      font-size: 1.1rem;
     }
   }
 

@@ -28,29 +28,7 @@
         color: $font-color-light;
         margin-top: 140px;
     }
-    .button {
-        display: inline-block;
-        text-decoration: none;
-        border-radius: 200px;
-        font-size: 1.1em;
-        font-weight: 400;
-        padding: 10px;
-        width: 40%;
-        color: $font-color-light;
-        border: 1px solid $font-color-light;
-        transition: 0.5s ease;
-    }
-    .fa-arrow-alt-circle-up {
-        transition: 0.5s ease-out;
-    }
-    .button:hover {
-        background: $font-color-light;
-        color: $dark-blue-color;
-        width: 45%;
-        .fa-arrow-alt-circle-up {
-            transform: translateX(30px) rotate(90deg + 360deg);
-        }
-    }
+
     .margin-1 {
         margin-top: 10px;
     }
@@ -61,15 +39,6 @@
         margin-top: 40px;
     }
 
-    /** media queries **/
-    @media screen and (min-width: 992px) and (max-width: 1134px){
-        .button {
-            width: 50%;
-        }
-        .button:hover {
-            width: 60%;
-        }
-    }
 
     @media screen and (min-width: 992px) { /* medium screen */
         .logo-img {
@@ -80,24 +49,10 @@
         .logo-img {
             width: 35%;
         }
-        .button {
-            width: 30%;
-        }
-        .button:hover {
-            width: 35%;
-        }
     }
     @media screen and (max-width: 772px) and (min-width: 500px) { /* tablet screen */
-        .button {
-            font-size: 1em;
-            font-weight: 300;
-            width: 35%;
-        }
         .lead {
             font-size: 1.3rem;
-        }
-        .button:hover {
-            width: 40%;
         }
     }
 
@@ -108,14 +63,6 @@
         .lead {
             font-size: 1.2rem;
         }
-        .button {
-            font-size: 1em;
-            font-weight: 300;
-            width: 70%;
-        }
-        .button:hover {
-            width: 90%;
-        }
     }
 
     @media screen and (max-width: 332px) {
@@ -124,14 +71,6 @@
         }
         .lead {
             font-size: 1.1rem;
-        }
-        .button {
-            font-size: 1em;
-            font-weight: 300;
-            width: 90%;
-        }
-        .button:hover {
-            width: 95%;
         }
     }
 

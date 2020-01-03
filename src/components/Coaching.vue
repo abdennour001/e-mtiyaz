@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid p-0 m-0 jumbotron vertical-align main-container" style="height: 70vh;">
     <div class="row">
-      <div class="col-6">
+      <div class="col-md-6 col-lg-6 col-sm-12 mb-4">
         <div class="row justify-content-center">
           <div class="col-12 e-mtiyaz-title">
             <h1 class="display-4 text-center">e-mtiyaz Coaching</h1>
@@ -9,7 +9,7 @@
               centre éducatif <strong>d'excellence</strong>.
             </p>
           </div>
-          <div class="col-12 mt-2 visit-button">
+          <div class="col-12 mt-lg-2 mt-md-2 visit-button">
             <a class="button"
                href="http://coaching.e-mtiyaz.com"
                target="_blank"
@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-md-6 col-lg-6 col-sm-12">
         <div class="logo">
           <a     href="http://coaching.e-mtiyaz.com"
                  target="_blank">
@@ -147,6 +147,36 @@
     background: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
     transform: skewX(-30deg);
+  }
+
+  /** media queries **/
+  @media screen and (min-width: 992px) { /* large screen */
+
+  }
+  @media screen and (max-width: 992px) { /* large screen */
+
+  }
+  @media screen and (max-width: 768px) { /* medium screen */
+
+  }
+  @media (max-width: 576px) { /* mobile screen */
+    .main-container:before {
+      left:-10%;
+      width: 120%;
+      opacity: .95;
+    }
+    .logo:after {
+      display: none;
+    }
+    .i {
+      width: 65%;
+    }
+    .button {
+      font-size: 1em;
+    }
+    .e-mtiyaz-title {
+      margin-top: 2rem;
+    }
   }
 
 </style>

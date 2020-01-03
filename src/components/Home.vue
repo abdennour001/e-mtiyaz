@@ -21,7 +21,7 @@
                 <hr class="blue">
               </div>
               <div class="col-12 mb-3">
-                <h4 style="font-weight: normal;" class="my-4">
+                <h4 style="font-weight: normal;" class="my-md-5 px-2">
                   Accèder aux filiales du groupe e-mtiyaz :
                 </h4>
               </div>
@@ -116,9 +116,9 @@
       window.srTitle = ScrollReveal({ reset: true });
       window.sr = ScrollReveal({ reset: false });
       srTitle.reveal('#title', {
-        duration: 1000,
+        duration: 2000,
         origin: 'top',
-        distance: '50px'
+        distance: '100px'
       })
       sr.reveal('.display-5', {
         duration: 1000,
@@ -175,6 +175,18 @@
           }, 500);
         }
         return false;
+      });
+
+      $('#myModal').on('show.bs.modal', function () {
+        $('#topBtn').css(
+          'display', 'none'
+        )
+      })
+
+      $('.pagination').on("click", function() {
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#actualite").offset().top
+        }, 0);
       });
     }
   }

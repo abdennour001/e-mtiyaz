@@ -130,5 +130,10 @@
     .display-5 {
       font-size: 1.5rem;
     }
+    .squeeze-50 {
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 2rem;
+    }
   }
 </style>
