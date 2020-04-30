@@ -18,7 +18,7 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.4.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "nanobar": "^0.4.2",
     "popper.js": "^1.16.0",
     "scrollreveal": "^4.0.5",
