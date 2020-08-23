@@ -4,7 +4,7 @@
       <img :src="img_path" alt="Image cap" class="card-img-top">
       <div class="card-body">
         <h5 class="card-title">{{this.title}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{this.date}}</h6>
+        <h6 class="card-subtitle my-2 text-muted">{{this.date}}</h6>
         <p class="card-text">
           {{this.intro}}
         </p>
@@ -46,5 +46,19 @@
     /*background: -webkit-linear-gradient($font-color-dark 10%, rgba(0, 0, 0, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
+  }
+
+  .card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 </style>

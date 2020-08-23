@@ -104,11 +104,11 @@
     top:0%;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-    transform: skewX(30deg);
+    transform: skewX(-30deg);
   }
 
   .logo:hover {
-    transform: translate(-20px);
+    transform: translate(20px);
   }
 
   .i {
@@ -141,7 +141,7 @@
     top:0%;
     background: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
-    transform: skewX(30deg);
+    transform: skewX(-30deg);
   }
 
   /** media queries **/

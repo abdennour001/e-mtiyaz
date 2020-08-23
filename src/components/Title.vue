@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-12 margin-3">
                     <p class="lead">
-                      Depuis 2013, e-mtiyaz oeuvre à faire de l'Algérie une terre d'excellence, aux côtés d'étudiants, de parents d'élèves, d'élèves et de partenaires institutionnels.
+                      Depuis 2013, e-mtiyaz oeuvre à faire de l'Algérie une terre d'excellence, aux côtés d'étudiants, de parents d'élèves, d'élèves et de partenaires institutionnels du secteur de l'éducation.
                     </p>
                 </div>
             </div>
@@ -38,7 +38,6 @@
     .margin-3 {
         margin-top: 40px;
     }
-
 
     @media screen and (min-width: 992px) { /* medium screen */
         .logo-img {

@@ -121,7 +121,7 @@
   }
 
   .jumbotron {
-    background: url("../assets/img/img-services-1.png") center no-repeat;
+    background: url("../assets/img/coaching.jpg") center no-repeat;
     background-size: cover;
   }
 
@@ -163,6 +163,7 @@
     .main-container:before {
       left:-10%;
       width: 120%;
+      height: 101%;
       opacity: .95;
     }
     .logo:after {

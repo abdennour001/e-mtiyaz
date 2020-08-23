@@ -32,12 +32,12 @@
                 <Coaching/>
               </div>
               <div class="col-12 mb-5">
-                <!-- Foundation -->
-                <Foundation/>
-              </div>
-              <div class="col-12">
                 <!-- Sup -->
                 <Sup/>
+              </div>
+              <div class="col-12">
+                <!-- Foundation -->
+                <Foundation/>
               </div>
             </div>
           </section>

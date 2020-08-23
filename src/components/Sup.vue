@@ -4,7 +4,7 @@
       <div class="col-md-6 col-lg-6 col-sm-12 mb-4">
         <div class="row justify-content-center">
           <div class="col-12 e-mtiyaz-title">
-            <h1 class="display-4 text-center">e-mtiyaz Sup (ex-Dirasat International) </h1>
+            <h1 class="display-4 text-center">e-mtiyaz Sup <br> (ex-Dirasat International) </h1>
             <p class="lead">
               études à l'<strong>Etranger</strong>.
             </p>
@@ -61,7 +61,7 @@
     top:0%;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-    transform: skewX(-30deg);
+    transform: skewX(30deg);
   }
 
   .logo:hover {
@@ -116,7 +116,7 @@
   }
 
   .jumbotron {
-    background: url("../assets/img/destination-tour-du-monde.jpg") center no-repeat;
+    background: url("../assets/img/img-services-1.png") center no-repeat;
     background-size: cover;
   }
 
@@ -142,7 +142,7 @@
     top:0%;
     background: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
-    transform: skewX(-30deg);
+    transform: skewX(30deg);
   }
 
 
@@ -170,7 +170,8 @@
       left:-10%;
       width: 120%;
       opacity: .95;
-      transform: skewX(-30deg);
+      height: 101%;
+      transform: skewX(30deg);
     }
     .logo:after {
       display: none;
