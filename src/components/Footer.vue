@@ -9,8 +9,8 @@
                     <hr class="light">
                     <p>05 40 40 51 15</p>
                     <p>excellence@e-mtiyaz.com</p>
-                    <p>Dar Diaf - 98 Lot Benhaddadi Said</p>
-                    <p>16002 Chéraga - Alger</p>
+                    <p>36B Lot Petite Provence</p>
+                    <p>16035 Hydra, Alger</p>
                 </div>
                 <div class="col-12 my-2">
                     <a class="button" href=""
