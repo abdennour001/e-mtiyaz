@@ -5,16 +5,19 @@
         <div class="row justify-content-center">
           <div class="col-12 e-mtiyaz-title">
             <h1 class="display-4 text-center">e-mtiyaz Coaching</h1>
-            <p class="lead">
-              centre éducatif <strong>d'excellence</strong>.
-            </p>
+<!--            <p class="lead">-->
+<!--              centre éducatif <strong>d'excellence</strong>.-->
+<!--            </p>-->
+          </div>
+          <div class="col-9 text-muted">
+            Depuis 2013, le centre d'excellence e-mtiyaz coaching accompagne chaque année des centaines d'élèves et étudiants algériens dans la réussite de leurs objectifs scolaires, universitaires et académiques.
           </div>
           <div class="col-12 mt-lg-2 mt-md-2 visit-button">
             <a class="button"
                href="http://coaching.e-mtiyaz.com"
                target="_blank"
                data-tool-tip="coaching.e-mtiyaz.com">
-              Visitez-nous
+              Accéder au site d'e-mtiyaz coaching
               <i class="fas fa-arrow-alt-circle-right align-middle ml-2" style="font-size: 1.7rem"></i>
             </a>
           </div>
@@ -52,7 +55,7 @@
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 400;
-    width: 40%;
+    width: 50%;
     color: $dark-blue-color;
     transition: 0.5s ease;
     position: relative;
@@ -177,6 +180,9 @@
     }
     .e-mtiyaz-title {
       margin-top: 2rem;
+    }
+    .e-mtiyaz-title {
+      font-size: .8rem;
     }
   }
 

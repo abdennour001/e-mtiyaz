@@ -5,16 +5,19 @@
         <div class="row justify-content-center">
           <div class="col-12 e-mtiyaz-title">
             <h1 class="display-4 text-center">e-mtiyaz Foundation</h1>
-            <p class="lead">
-              promotion de l'insertion <strong>professionnelle</strong> des étudiants.
-            </p>
+<!--            <p class="lead">-->
+<!--              promotion de l'insertion <strong>professionnelle</strong> des étudiants.-->
+<!--            </p>-->
+          </div>
+          <div class="col-9 text-muted">
+            Aux côtés de partenaires issus du secteur privé ou d'institutions publiques ou associatives, la fondation e-mtiyaz oeuvre à promouvoir l'insertion professionnelle des diplômés algériens de l'enseignement supérieur.
           </div>
           <div class="col-12 mt-lg-2 mt-md-2 visit-button">
             <a class="button"
                href="http://foundation.e-mtiyaz.com"
                target="_blank"
                data-tool-tip="foundation.e-mtiyaz.com">
-              Visitez-nous
+              Accéder au site d'e-mtiyaz fondation
               <i class="fas fa-arrow-alt-circle-right align-middle ml-2" style="font-size: 1.7rem"></i>
             </a>
           </div>
@@ -47,7 +50,7 @@
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 400;
-    width: 40%;
+    width: 50%;
     color: $dark-blue-color;
     transition: 0.5s ease;
   }
@@ -172,6 +175,10 @@
     }
     .e-mtiyaz-title {
       margin-top: 2.5rem;
+    }
+
+    .e-mtiyaz-title {
+      font-size: .8rem;
     }
   }
 

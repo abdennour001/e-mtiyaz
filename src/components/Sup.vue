@@ -5,16 +5,19 @@
         <div class="row justify-content-center">
           <div class="col-12 e-mtiyaz-title">
             <h1 class="display-4 text-center">e-mtiyaz Sup <br> (ex-Dirasat International) </h1>
-            <p class="lead">
-              études à l'<strong>Etranger</strong>.
-            </p>
+<!--            <p class="lead">-->
+<!--              études à l'<strong>Etranger</strong>.-->
+<!--            </p>-->
+          </div>
+          <div class="col-9 text-muted">
+            un accompagnement complet, allant du conseil d'orientation au suivi sur place permettant à l'étudiant et sa famille de réussir dans leur projet d'études supérieures à l'international.
           </div>
           <div class="col-12 mt-2 visit-button">
             <a class="button"
                href="https://www.dirasat-international.com/"
                target="_blank"
             data-tool-tip="www.dirasat-international.com">
-              Postuler à l'ètranger
+              Accéder au site d'e-mtiyaz Sup
               <i class="fas fa-arrow-alt-circle-right align-middle ml-2" style="font-size: 1.7rem"></i>
             </a>
           </div>
@@ -185,6 +188,9 @@
     }
     .e-mtiyaz-title {
       margin-top: 2rem;
+    }
+    .e-mtiyaz-title {
+      font-size: .8rem;
     }
   }
 

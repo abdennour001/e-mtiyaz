@@ -1,7 +1,7 @@
 <template>
     <div class="row text-center" style="margin-top: 2rem;">
         <div class="col-12">
-            <h1 class="display-5">Besoin de plus d'informations ?</h1>
+            <h1 class="display-5">Pour plus d'information</h1>
         </div>
         <div class="col-12 mb-4">
             <hr class="blue" style="width: 20%;">
@@ -11,7 +11,7 @@
             <p class="lead">05 40 40 51 15</p>
             <h2 class="display-6">Par email:</h2>
             <p class="lead">excellence@e-mtiyaz.com</p>
-            <h2 class="display-6">Centre e-mtiyaz:</h2>
+            <h2 class="display-6">Siège e-mtiyaz - Alger</h2>
 <!--            <p class="lead" style="text-transform: uppercase;">Dar Diaf - 98 Lot Benhaddadi Said</p>-->
             <p class="lead" style="text-transform: uppercase;">36B Lot Petite Provence</p>
 <!--            <p class="lead" style="text-transform: uppercase;">16002 Chéraga - Alger</p>-->
