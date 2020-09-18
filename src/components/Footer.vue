@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-12">
                     <hr class="light">
-                    <p>&reg; www.e-mtiyaz.com | Tous droits réservés</p>
+                    <p>&reg; group.e-mtiyaz.com | Tous droits réservés</p>
                 </div>
             </div>
         </div>

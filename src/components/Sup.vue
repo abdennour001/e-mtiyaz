@@ -10,7 +10,8 @@
 <!--            </p>-->
           </div>
           <div class="col-9 text-muted">
-            un accompagnement complet, allant du conseil d'orientation au suivi sur place permettant à l'étudiant et sa famille de réussir dans leur projet d'études supérieures à l'international.
+            e-mtiyaz Group et sa filiale Dirasat International ont pour mission d'accompagner les étudiants internationaux aux études supérieures et à les conduire aux meilleures opportunités. Avec Dirasat International, les études à l’étranger ne sont plus un rêve inaccessible mais un projet en passe de devenir réalité !
+<!--            Un accompagnement complet, allant du conseil d'orientation au suivi sur place permettant à l'étudiant et sa famille de réussir dans leur projet d'études supérieures à l'international.-->
           </div>
           <div class="col-12 mt-2 visit-button">
             <a class="button"

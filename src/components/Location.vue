@@ -18,8 +18,8 @@
             <p class="lead" style="text-transform: uppercase;">16035 Hydra, Alger</p>
         </div>
         <div class="col-12">
-            <iframe class="py-4" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25578.110244679756!2d3.007740359685106!3d36.74023905819766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%2236B%20Lot%20Petite%20Provence%2C%2016035%20Hydra%2C%20Alger%22!5e0!3m2!1sen!2sdz!4v1598198450093!5m2!1sen!2sdz" width="100%" height="450" frameBorder="0"></iframe>
-<!--            <iframe class="py-4" src="https://www.google.com/maps/d/embed?mid=1rVEb_-u7GMsu1Vv1Kv3jJVJuNL0" width="100%" height="450" frameBorder="0"></iframe>-->
+            <iframe class="py-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.2854943531247!2d3.0325340152881872!3d36.73971777996109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDQ0JzIzLjAiTiAzwrAwMicwNS4wIkU!5e0!3m2!1sen!2sfr!4v1599428659449!5m2!1sen!2sfr" width="100%" height="450" frameBorder="0"></iframe>
+<!--            <iframe class="py-4" src="https://goo.gl/maps/A3GdumgFDxRrQzAa6" width="100%" height="450" frameBorder="0"></iframe>-->
         </div>
     </div>
 </template>

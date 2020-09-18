@@ -5,7 +5,7 @@
                 <div id="nanobar-rendez-vous"></div>
             </div>
             <div class="col-12 text-center squeeze-75">
-                <p class="lead">Envoyez-nous un message !</p>
+                <p class="lead">Contact</p>
             </div>
             <form id="contact" method="post" class="squeeze-50">
                 <div class="form-row">
@@ -122,7 +122,7 @@
             return new Promise(resolve => setTimeout(resolve, ms));
           }
 
-          this.axios.post("http://localhost:8888/API/contact/contact.php", data)
+          this.axios.post("API/contact/contact.php", data)
             .then(async response => {
               if (response.data.includes('Message has been sent')) {
                 this.success = true

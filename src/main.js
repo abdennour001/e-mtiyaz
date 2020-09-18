@@ -16,6 +16,7 @@ import VueAxios from 'vue-axios'
 
 Vue.use(BootstrapVue)
 Vue.use(VueLodash)
+axios.defaults.baseURL = "/API/index.php"
 Vue.use(VueAxios, axios)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)

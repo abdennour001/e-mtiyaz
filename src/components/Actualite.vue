@@ -76,9 +76,12 @@
       });
 
       // make the api call to get all the articles
-      this.axios.get( "http://localhost:8888/API/index.php/articles")
+      this.axios.get( "/articles")
       .then(response => {
         this.articles = response.data;
+        this.articles.forEach(
+          article => article.img_path = article.img_path.replace("://group.", "://admin.")
+        )
         this.axiosResponse = true;
       })
       .catch(e => {
